@@ -154,7 +154,7 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
   color: #1A3B5B;
   border-bottom: 3px solid #1A3B5B;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 
 }
 
@@ -167,8 +167,16 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
-  color: white;
+  color: #fff;
+
+
 }
+
+ #mainNav .navbar-nav .dropdown-item:hover{
+        color:#fff;
+        background:#1A3B5B;
+    }
+
 
 @media (min-width: 992px) {
   #mainNav {
@@ -217,6 +225,12 @@ img::-moz-selection {
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
   }
   
+}
+
+@media (max-width:800px){
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,#mainNav .navbar-nav > li.nav-item > a.nav-link.active{
+    padding-left:13px;
+  }
 }
 
 .margin-top-navbar{
@@ -563,6 +577,7 @@ header.masthead p {
     
 }
 
+
 @media(max-width:500px){
   .about-col{
     margin: 15px 0;
@@ -593,6 +608,20 @@ header.masthead p {
     padding: 0 40px 15px 15px;
 }
 
+@media(max-width:900px){
+  .about-col .package-short-content{
+   display: none;
+  }
+
+}
+
+@media(max-width:600px){
+  .about-col .package-short-content{
+   display: block;
+  }
+}
+
+
 
 .about-col .card-btn{
     width: 150px;
@@ -604,6 +633,22 @@ header.masthead p {
     border-radius: 15px;
     padding: 5px 0px;
 }
+
+
+
+@media(max-width:900px){
+  .about-col .card-btn{
+    margin-top: 15px;
+  }
+
+}
+
+@media(max-width:600px){
+  .about-col .card-btn{
+    margin-top: 0px;
+  }
+}
+
 
 .about-col .card-btn:hover{
     background: #7F7CAF;
@@ -642,6 +687,10 @@ header.masthead p {
   display: block;
   max-width: 650px;
   margin: 2px;
+}
+
+.portfolio-box .img-fill{
+  width: 100%;
 }
 
 .portfolio-box .portfolio-box-caption {
